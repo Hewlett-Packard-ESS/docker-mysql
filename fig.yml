@@ -1,0 +1,4 @@
+chef:
+ image: hpess/mysql
+ ports: 
+  - "3306:3306"
