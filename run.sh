@@ -57,9 +57,6 @@ CreateMySQLUser()
 if [[ ! -d $VOLUME_HOME/mysql ]]; then
     echo "=> An empty or uninitialized MySQL volume is detected in $VOLUME_HOME"
     echo "=> Installing MySQL ..."
-#    if [ ! -f /usr/share/mysql/my-default.cnf ] ; then
-#        cp /etc/mysql/my.cnf /usr/share/mysql/my-default.cnf
-#    fi 
     mysql_install_db > /dev/null 2>&1
     echo "=> Done!"  
     echo "=> Creating admin user ..."
