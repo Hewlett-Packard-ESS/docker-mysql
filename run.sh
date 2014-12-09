@@ -1,5 +1,5 @@
 #!/bin/bash
-VOLUME_HOME="/var/lib/mysql"
+VOLUME_HOME="/storage/mysql"
 CONF_FILE="/etc/my.cnf"
 LOG="/var/log/mysql/error.log"
 MYSQL_USER='admin'
