@@ -15,6 +15,7 @@ ADD mysql.service.conf /etc/supervisord.d/mysql.service.conf
 ADD my.cnf /etc/my.cnf
 RUN mkdir -p /storage/mysql && \  
     chown mysql:mysql /storage/mysql
+ENV TERM dumb
 
 CMD ["/usr/bin/run.sh"]
 EXPOSE 3306
