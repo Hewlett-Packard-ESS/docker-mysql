@@ -1,5 +1,6 @@
-# hpess/mysql
-Builds on the hpess/chef image by installing mysql (MariaDB) and adding it to the supervisord startup list
+![MySQL](/mysql.png?raw=true "MySQL")
+
+Builds on the [hpess/chef](https://github.com/Hewlett-Packard-ESS/docker-chef) image by installing MySQL (MariaDB) and adding it to the supervisord startup list
 
 You can set the admin password using the environment variable MYSQL_PASS
 
