@@ -1,8 +1,8 @@
 FROM hpess/chef:master
 MAINTAINER Karl Stoney <karl.stoney@hp.com>
 
-RUN yum -y install mariadb mariadb-server pwgen && \
-    yum -y clean all
+RUN yum -y -q install mariadb mariadb-server pwgen && \
+    yum -y -q clean all
 
 # Add MySql configuration
 ADD my.cnf /etc/my.cnf
