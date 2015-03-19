@@ -1,1 +1,1 @@
-docker build -t hpess/mysql:latest .
+docker build -t hpess/mysql:master .
